@@ -1,0 +1,27 @@
+body {
+    background: #f3f3f3;
+  }
+.tt{
+  padding-left: 20px;
+  cursor: pointer;
+}
+img{
+  cursor: pointer;
+}
+.head{
+  min-height: 87vh;
+}
+.foot{
+  margin-top: 820px;
+  margin-bottom: 0px;
+  min-height: 20vh;
+  width: 100%;
+  position:fixed;
+
+}
+.navbar1{
+  height: 100%;
+}
+head{
+  height: 750px;
+}

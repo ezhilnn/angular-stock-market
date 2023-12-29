@@ -1,0 +1,32 @@
+.card{
+    background-color:#3F51B5;
+    box-shadow: 0px 0px 33px -10px rgba(71,114,254,0.3);
+    max-width: 700px;
+    margin: auto;
+}
+input[type=text],input[type=email],textarea{
+    height: 60px;
+    padding-left: 20px;
+    font-size: 13px;
+    width: 100%;
+}
+.form-group{
+    margin: 10px;
+}
+.btn-sub{
+    height: 30px;
+    border: none;
+    font-size: 13px;
+    background-color: #fcf9f9;
+    width: 100px;
+}
+textarea{
+    resize: none;
+}
+button{
+    cursor: pointer;
+}
+.home{
+    background-color: #fcf9f9;
+    border-radius: 5px;
+}

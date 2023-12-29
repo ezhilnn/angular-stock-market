@@ -1,0 +1,35 @@
+.icon{
+    margin: 3px;
+}
+.info{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.port{
+    font-size: 25px;
+}
+.dashboard{
+    background-color: rgb(242, 250, 242);
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.xxx{
+    display: inline;
+    padding: 3px;
+}
+.profit{
+    color: green;
+}
+.loss{
+    color: red;
+}
+.card-2{
+    margin-top: 10px;
+    background: #f3f3f3;
+}
+.details{
+    margin: 40px;
+}

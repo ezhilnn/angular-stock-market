@@ -1,0 +1,25 @@
+<section>
+    <form action="" fxLayout="column" fxLayoutAlign="center center" #f="ngForm" (ngSubmit)="onSubmit(f)">
+        <mat-form-field>
+            <mat-label>Stock Name</mat-label>
+            <input type="text" matInput name="Stock Name" placeholder="Stock Name" required ngModel name="stock" stock required #stockInput="ngModel">
+            <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Last Traded Price</mat-label>
+            <input type="text" matInput name="lastTradedPrice" placeholder="Last Traded Price" required ngModel name="lastTradedPrice"lastTradedPrice required #lastTradedPriceInput="ngModel">
+            <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>Change</mat-label>
+            <input type="text" matInput name="Change" placeholder="Change" required ngModel name="Change" change required #changeInput="ngModel">
+            <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <mat-form-field>
+            <mat-label>change in percent</mat-label>
+            <input type="text" matInput name="changeInPercent" placeholder="change in percent" required ngModel name="changeInPercent" changeInPercent required #changeInPercentInput="ngModel">
+            <mat-error>This field is required</mat-error>
+        </mat-form-field>
+        <button type="submit" mat-raised-button color="primary" [disabled]="f.invalid">Submit</button>
+    </form>
+</section>

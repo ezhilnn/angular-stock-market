@@ -1,0 +1,16 @@
+.bg-theme{
+    background-color:#3F51B5 ;
+}
+.bg-secondary-theme{
+    background-color: #fcfcfc;
+}
+.text-theme-primary{
+    color:#3F51B5;
+}
+.btn-sub{
+    height: 58px;
+    border: none;
+    font-size: 13px;
+    background-color: #3F51B5;
+    color: white;
+}

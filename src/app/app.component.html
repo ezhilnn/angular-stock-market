@@ -1,0 +1,36 @@
+<div class="head fixed-top">
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <div><img src="https://media.istockphoto.com/id/941624340/vector/finance-icon.jpg?s=612x612&w=0&k=20&c=YbWMt9NnuWnxEmN7J9cB8O4Hx1qHIavF1wYkyVh7caM=" alt="" height="56px" routerLink="/"></div>
+        <span class="mdl-layout-title tt" (click)="home()">Stocks</span>
+        <div class="mdl-layout-spacer"></div>
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+          <a class="mdl-navigation__link" [routerLink]="['/']">Dashboard</a>
+          <a class="mdl-navigation__link" [routerLink]="['/manage']">Manage</a>
+          <a class="mdl-navigation__link" [routerLink]="['/notification']"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bell-fill" viewBox="0 0 16 16">
+            <path d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5.002 5.002 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901z"/>
+          </svg></a>
+        </nav>
+      </div>
+    </header>
+    <div class = "mdl-layout__drawer navbar1">
+      <span class = "mdl-layout-title">Menu</span>
+      <nav class = "mdl-navigation">
+         
+          <a class = "mdl-navigation__link" href = "">Home</a>
+          <div *ngIf="isAuth">
+         <a class = "mdl-navigation__link" href = "" routerLink="/profile">Profile</a> 
+        </div>
+         <a class = "mdl-navigation__link" routerLink="/about">About</a>
+         <a class = "mdl-navigation__link" style="cursor: pointer;"  *ngIf="isAuth" (click)="onLogOut()">Log Out</a>
+         <a class = "mdl-navigation__link" routerLink="/login" *ngIf="!isAuth" >Log In</a>      
+      </nav>
+   </div>
+    <main class="mdl-layout__content" style="padding: 20px;">
+      <router-outlet></router-outlet>
+    </main>
+  </div>
+</div>
+<div class="foot"><footer><app-footer></app-footer></footer></div>

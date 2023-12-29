@@ -1,0 +1,13 @@
+.xxx{
+    font-size: 15px;
+}
+.card{
+    padding:auto;
+    margin: 5px;
+}
+.pos{
+    background-color: rgb(202, 247, 202);
+}
+.neg{
+    background-color: rgb(248, 198, 198);
+}

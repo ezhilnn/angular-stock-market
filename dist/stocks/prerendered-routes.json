@@ -1,0 +1,14 @@
+{
+  "routes": [
+    "/",
+    "/about",
+    "/add-stocks",
+    "/contact",
+    "/login",
+    "/manage",
+    "/notification",
+    "/profile",
+    "/signup",
+    "/terms"
+  ]
+}

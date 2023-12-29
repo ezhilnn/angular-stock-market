@@ -1,0 +1,47 @@
+<div class="card">
+    <div class="card-body">
+        <div class="text-center mt-3 mb-5">Contact Us</div>
+        <form [formGroup]="form" class="justify-content-center d-flex flex-column align-items-center mb-5 mt-5" >
+            <div class="form-group col-md-8">
+                <input type="text" class="form-control shadow-effect" placeholder="Your Name"  formControlName="name" >
+            </div>
+            <!-- <div *ngIf="fc['name'].touched && fc['name'].invalid" >
+                <div class="alert alert-danger">Name is Required</div>
+            </div> -->
+            <div *ngIf="fc['name'].touched && fc['name'].invalid" >
+                <div *ngIf="Name?.errors?.['required']"><div class="alert alert-danger">Name is Required</div></div>
+                <div *ngIf="Name?.errors?.['pattern']">
+                    <div class="alert alert-danger">Enter only charcters.Do not include numbers or symbols</div>
+                </div>
+                
+            </div>
+            <div class="form-group col-md-8">
+                <input type="email" class="form-control shadow-effect" placeholder="Your email" formControlName="email">
+            </div>
+            <div *ngIf="fc['email'].touched && fc['email'].invalid" >
+                <div *ngIf="Email?.errors?.['required']"><div class="alert alert-danger">Name is Required</div></div>
+                <div *ngIf="Email?.errors?.['pattern']">
+                    <div class="alert alert-danger">Enter proper email</div>
+                </div>
+                
+            </div>
+            <div class="form-group col-md-8">
+                <textarea name="" id="" cols="41" rows="5" class="form-control shadow-effect" placeholder="Your query goes here" formControlName="query"></textarea>
+            </div>
+            <div *ngIf="fc['query'].touched && fc['query'].invalid" >
+                <div *ngIf="Query?.errors?.['required']"><div class="alert alert-danger">this field is Required is Required</div></div>
+                <div *ngIf="Query?.errors?.['minLength']">
+                    <div class="alert alert-danger">Enter minimum 100 words</div>
+                </div>
+                
+            </div>
+            <div class="col-md-3 text-center">
+                <button class="btn btn-block btn-info btn-sub" (click)="contact()" [disabled]="!form.valid">SUBMIT</button>
+            </div>
+            
+        </form>
+        <div class="m-2 text-center">
+            <button class="btn btn-info btn-sm mt-2 home" href=" " (click)="home()">Back to Home</button>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,97 @@
+<div class="container">
+    <div class="row">
+        <div class="card col-md-3 icon" style="width: 18rem;">
+            <img  class="card-img-top"  src="https://static-00.iconduck.com/assets.00/profile-major-icon-512x512-xosjbbdq.png" alt="" >
+            <div class="card-body">
+                <p class="card-text text-center"><b>USERNAME</b></p>
+            </div>
+            
+        </div>
+        <div class="card col-md-9 info">
+            <div class="text-center port"><b>Your Portfolio</b></div>
+            <div class="card col-md-11 dashboard">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="xxx d-flex">
+                            <h5>Invested Value : </h5>
+                            <h5>&nbsp;{{amountInvested | currency:'USD':'symbol':'.2' }}</h5>
+                        </div>
+                        <div class="xxx d-flex">
+                            <h5>Current Value : </h5>
+                            <h5 class="profit" class="loss"[class.profit]="isProfit" [class.loss]="!isProfit">&nbsp; {{currentAmount | currency:'USD':'symbol':'.2' }}</h5>
+                        </div>
+                        <div class="xxx d-flex">
+                            <h5>No of Holdings : </h5>
+                            <h5> &nbsp;{{noOfHolding}}</h5>
+                        </div>
+                        <!-- <div class="xxx d-flex">
+                            <h5></h5>
+                            <h5></h5>
+                        </div> -->
+    
+                        <!-- <h5>Invested Value:<h5>{{amountInvested | currency:'USD':'symbol':'.2' }}</h5></h5> 
+                        <h5>Current Value:<h5>{{currentAmount| currency:'USD':'symbol':'.2' }}</h5></h5>  -->
+                    </div>
+                    <div class="col-md-5">
+                        <div class="xxx d-flex">
+                            <h5>Total Returns :</h5>
+                            <h5 class="profit" class="loss"[class.profit]="isProfit" [class.loss]="!isProfit">&nbsp;{{totalReturns|currency:'USD':'symbol':'.2'}}</h5>
+                        </div>
+                        <div class="xxx d-flex">
+                            <h5>Total Retuns Percentage : </h5>
+                            <h5 class="profit" class="loss"[class.profit]="isProfit" [class.loss]="!isProfit">&nbsp;{{totalReturnsPercent | percent:'.2'}}</h5>
+                        </div>
+                        <div class="xxx d-flex">
+                            <h5>One day Returns :</h5>
+                            <h5 class="profit loss" [class.profit]="OneDay" [class.loss]="!OneDay">&nbsp;{{oneDayRetuns|currency:'USD':'symbol':'.2'}}({{oneDayReturnsPercentage | percent:'.2'}})</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container card-2">
+    <h3 class="text-center">Personal Details</h3>
+    <div class="row">
+        <div class="col-md-4 details">
+            <div class="xxx d-flex">
+                <h5>Name :&nbsp;</h5>
+                <h5>{{Username}}</h5>
+            </div>
+            <div class="xxx d-flex">
+                <h5>Date Of birth :&nbsp;</h5>
+                <h5>{{uDOB|date:'shortDate'}}</h5>
+            </div>
+            <div class="xxx d-flex">
+                <h5>Marital status :&nbsp;</h5>
+                <h5>{{maritalStatus}}</h5>
+            </div>
+           
+            <div class="xxx d-flex">
+                <h5></h5>
+                <h5></h5>
+            </div>
+        </div>
+        <div class="col-md-2"></div>
+        <div class="col-md-4 details">
+            <div class="xxx d-flex">
+                <h5>PAN Number :</h5>
+                <h5>&nbsp;{{Pan}}</h5>
+            </div>
+            <div class="xxx d-flex">
+                <h5>Email :</h5>
+                <h5>&nbsp;{{Email}}</h5>
+            </div>
+            <div class="xxx d-flex">
+                <h5>Mobile Number :</h5>
+                <h5>&nbsp;{{mobileNo}}</h5>
+            </div>
+        </div>
+    </div>
+    <div class="text-center">
+        <button class="btn btn-outline-primary">Edit Details</button>
+    </div>
+
+</div>
